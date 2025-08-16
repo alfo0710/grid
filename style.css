@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    flex-wrap: nowrap;
+}
+  
+  .encabezado1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .clima{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #9a4ca5;
+  }
+  
+  #menu {
+    width: 25px;
+  }
+  
+  #logo {
+    height: 40px;
+  }
+  
+.parteFinal{
+    display: flex;
+    gap:15px;
+}
+
+  .suscripcion {
+   background-color: rgb(213, 214, 167);
+   padding:8px;
+   border-radius: 5px;
+   font-size: 13px;
+   text-align: center;
+  }
+
+  .suscripcion h3{
+    margin-top: 2px;
+  }
+  
+  .usuario {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 16px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 5px;
+  }
+  
+  .usuario img {
+    width: 25px;
+    margin-right: 5px;
+  }
+  
+  .encabezado2 {
+    background-color: #a354a2;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+  }
+  
+  .encabezado2 img {
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left:15px;
+    margin-right: 15px;
+  }
+
+  nav li{
+    color: white;
+  }
+  
+  #busqueda{
+    display: flex;
+    margin-left: 400px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+  }
+
+  .claseGeneral{
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    grid-template-rows: repeat(3, 300px);
+    margin:20px;
+    gap: 10px;
+    grid-template-areas: 
+        
+    'parte1 parte1 parte2 parte3'
+    'parte1 parte1 parte4 parte4'
+    'parte5 parte6 parte7 parte7'
+  }
+
+  .textoSuperpuesto{
+    color: white;
+    position: absolute;
+    background-color: #00000092;
+    bottom: 1px;
+    margin: 5px;
+  }
+
+  .hijo1, .hijo2, .hijo3, .hijo4,.hijo7 {
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-size: 12px;
+    bottom: 1px;
+  }
+
+  .hijo1{
+    grid-area: parte1;
+    background-image: url(https://www.shutterstock.com/image-vector/pregnant-woman-fetus-baby-womb-600nw-2464366569.jpg);
+  }
+  
+  .hijo2 {
+    grid-area: parte2;
+    background-image: url('https://www.salta.gob.ar/public/images/noticias/80600-fue-diagnosticado-un-caso-de-dengue-en-salvador-mazza.jpg');
+  }
+  
+  .hijo3{
+    grid-area: parte3;
+    background-image: url(https://media.istockphoto.com/id/1081660292/es/foto/hollywood-ca-estados-unidos-26-de-julio-de-2018-concesi%C3%B3n-de-oscar-golden-en-una-tienda-de.jpg?s=612x612&w=0&k=20&c=utAo94ulNoTxiw0isM50bvw0tE4mfW-fwtCD33YJI90=);
+  }
+
+  .hijo4{
+    grid-area: parte4;
+    background-image: url(https://eldoce.tv/resizer/v2/jose-palazzo-produccion-espectaculos-GTU76XYHHVATZKM6HVZZUZHXAI.jpg?auth=5c797987dec0955e665ab97639509fa60d40a398f1657ae07765a376a82bd57b&width=767);
+  }
+
+  .hijo5{
+    grid-area: parte5;
+  }
+
+  .hijo6{
+    grid-area: parte6;
+  }
+
+  .hijo7{
+    grid-area: parte7;
+    background-image: url(https://www.rae.es/sites/default/files/2020-09/Pombo_1.JPG);
+  }
+
+  hr{
+    width: 1310px;
+    border: solid;
+    border-width: 1px;
+  }
+
+  aside{
+    display: flex;
+    margin-left: 17px;
+    gap: 10px;
+  }
+
+  .contenedoresPequeños{
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(194, 193, 193);
+    width: 320px;
+  }
+
+  .contenedoresPequeños img{
+    width: 318px;
+    justify-content: center;
+  }
+
+  .contenedoresPequeños p{
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .contenedoresPequeños h2{
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+
+   
