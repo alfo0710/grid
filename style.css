@@ -1,0 +1,127 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    header{
+        background-color: chocolate;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items:end ;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    li{
+        display: flex;
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .oculto{
+        display: none;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+    
+        grid-template-areas: 
+                'bienvenida bienvenida section1 section1'
+                'bienvenida bienvenida section1  section1'
+                'bienvenida bienvenida section2 section2'
+                'bienvenida bienvenida section2 section2'
+    }
+
+    aside{
+        grid-area: bienvenida;
+    }
+
+    .section1{
+        grid-area: section1;
+    }
+
+    .section2{
+        grid-area: section2;
+    }
+
+
+    .general{
+        border: thin solid chocolate;
+        margin: 10px;
+        padding: 70px;
+    }
+
+
+    footer{
+        background-color: chocolate;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header li {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .general {
+        padding: 20px;
+    }
+
+     .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+    
+        grid-template-areas: 
+                'bienvenida bienvenida bienvenida bienvenida'
+                'bienvenida bienvenida bienvenida bienvenida'
+                'section1 section1 section2 section2'
+                'section1 section1 section2 section2'
+    }
+
+     .oculto{
+        display: contents;
+    }
+
+}
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header li {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .general {
+        padding: 20px;
+    }
+
+}
